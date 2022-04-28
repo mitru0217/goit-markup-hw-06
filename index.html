@@ -392,13 +392,13 @@
             </li>
           </ul>
         </div>
-        <form action="" name="Subscription" class="subscription-form">
+        <form  name="Subscription" class="subscription-form">
           
           <div class="subscription">
             <h3 class="title-text text-color sub-title">Подпишитесь на рассылку</h3>
             <label for="email" class="label-input">
-              <input type="email" name="subscriptio" id="email" placeholder="E-mail" class="sub-input sub-input-text" >
-              <button class="btn-subscription btn-sub-text">Подписаться
+              <input type="email" name="subscription" id="email" placeholder="E-mail" class="sub-input sub-input-text" >
+              <button  type="submit" class="btn-subscription btn-sub-text">Подписаться
                 <svg class="sub-icon" width="24" height="24">
                   <use href="./images/symbol-defs-hw-6.svg#icon-icon-send-1"></use>
                 </svg>
@@ -410,22 +410,34 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-         <form action="" name="" class="modal-form">
+         <form name="" class="modal-form" autocomplete="off">
           <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
           <ul class="contakt-info">
             <li class="item">
               <label for="name" class="contact-input text-label"> Имя
+               
                 <input type="text" id="name" class="input-form">
+                 <svg class="contact-icon"> 
+                  <use href="./images/symbol-defs-hw-6.svg#icon-person-black-18dp-1"></use>
+                </svg>
               </label>
             </li>
             <li class="item">
                <label for="tel" class="contact-input text-label">Телефон
+                
                 <input type="tel" id="tel" class="input-form">
+                 <svg class="contact-icon"> 
+                  <use href="./images/symbol-defs-hw-6.svg#icon-phone-black-18dp-1"></use>
+                </svg>
               </label>
             </li>
             <li class="item">
                <label for="email" class="contact-input text-label">Почта
+                   
                 <input type="email" id="email" class="input-form">
+                <svg class="contact-icon"> 
+                  <use href="./images/symbol-defs-hw-6.svg#icon-email-black-18dp-1"></use>
+                </svg>
               </label>
             </li>
             <li class="item">
@@ -434,7 +446,13 @@
               </label>
             </li>
           </ul>
-          <button></button>
+          
+          <label  class="field">
+              <input type="checkbox" class="checkbox" name="topic" value="agreement">
+              <span class="agr-icon"></span>
+              <p class="agr-title">Соглашаюсь с рассылкой и принимаю <span class="agr-span">Условия Дoговора</span></p>
+          </label>
+          <button type="submit" class="btn-send btn-send-text">Отправить</button>
         </form> 
         <button type="button" class="btn-close" data-modal-close>
          <svg class="close">
