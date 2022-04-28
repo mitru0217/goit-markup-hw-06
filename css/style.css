@@ -457,6 +457,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: end;
     min-width: 528px;
     height: 550px;
+    padding: 40px;
     background-color: #FFFFFF;
     border-radius: 4px;
 }
@@ -467,8 +468,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     width: 30px;
     height: 30px;
-    margin-top: 8px;
-    margin-right: 8px;
+    margin-top: -32px;
+    margin-right: -32px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #FFFFFF;
@@ -485,9 +486,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form {
     width: 448px;
-    margin-top: 40px;
+    /* margin-top: 40px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 }
 .form-title {
     font-weight: 700;
@@ -516,6 +517,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .input-form {
     height: 40px;
     padding-left: 42px;
+    margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -552,6 +554,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .field {
     display: flex;
     align-items: center;
+    margin-left: 13px;
 }
 .checkbox {
     position: absolute;
@@ -598,7 +601,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 200px;
     height: 50px;
     background-color: var(--activ-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: 4px;
     margin-top: 30px;
     margin-left: auto;
